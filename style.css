@@ -7,7 +7,7 @@ html, body{
 }
 body{
     width: 100%;
-    background-image: radial-gradient(rgba(104, 163, 8, 0.87),rgb(0, 128, 128),rgba(1, 35, 129, 0.763));
+    background-image: radial-gradient(rgba(7, 168, 143, 1),rgb(0, 128, 128),rgba(6, 112, 194, 0.76));
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
