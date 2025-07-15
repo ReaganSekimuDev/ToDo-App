@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    background-image: radial-gradient(rgb(163, 143, 8),rgb(0, 128, 128),rgba(1, 35, 129, 0.763));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    position: inherit;
+    width: 100%;
+    height: 190px;
+}
+main {
+    width: 100%;
+}
+main .section-1{
+    background-image: radial-gradient(rgba(129, 163, 8, 0.516),rgb(0, 128, 128),rgba(1, 99, 129, 0.615));
+    position: fixed;
+    top: 0px;
+}
+main .section-1 h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    margin-top: 20px;
+}
+main section .inputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: white;
+    position: relative;
+    left:5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(4, 163, 198);
+    border-radius: .5em;
+}
+main section .inputs input{
+    cursor: text;
+    width: 47%;
+    border-radius: .5em;
+    padding: 10px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    border: none;
+    color: rgb(3, 118, 138);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+main section .inputs input:hover{
+    border: none;
+    outline: none;
+}
+main section .inputs button{
+    padding: 8px;
+    cursor: pointer;
+    border: 3px solid rgb(181, 187, 5);
+    background-color: hsl(136, 94%, 26%);
+    color: white;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main section .card{
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+}
+main section .card table{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+main section .card table tr:nth-child(odd){
+    color: rgb(183, 162, 5);
+}
+main section .card table tr:hover{
+    
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+main section .card table tr:nth-child(even){
+    color: rgb(2, 136, 138);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+main section .card table tr td{
+    padding: 4px;
+    font-size: 18px;
+    cursor:grab;
+}
+main section .card table tr button{
+    padding: 8px;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+main section .card table tr button:hover{
+    animation-name: clickEfect;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+main section .card table tr:nth-child(even) button{
+    background-color: rgb(134, 3, 47);
+    color: white;
+}
+
+main section .card table tr:nth-child(odd) button{
+    background-color: rgb(171, 31, 77);
+    color: aqua;
+    
+}
+
+@keyframes clickEfect{
+    from{
+        background-color: blue;
+    }
+    
+}
